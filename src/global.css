@@ -1,0 +1,8 @@
+body > #page {
+  border: black solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body {
+  overflow: hidden;
+}

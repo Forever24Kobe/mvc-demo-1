@@ -1,0 +1,32 @@
+#app4 {
+  border: 1px solid green;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+#app4 .circle {
+  width: 30vh;
+  height: 30vh;
+  border: 2px solid teal;
+  border-radius: 50%;
+  margin-top: 10vh;
+}
+@keyframes color {
+  0% {
+    background: #3f5efb;
+  }
+  33% {
+    background: #fc466b;
+  }
+
+  66% {
+    background: #ffe600;
+  }
+  100% {
+    background: #fdc32d;
+  }
+}
+#app4 .circle.active {
+  animation: color 1s infinite alternate linear;
+}

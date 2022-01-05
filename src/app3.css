@@ -1,0 +1,33 @@
+#app3 {
+  border: rosybrown solid 1px;
+  width: 49vw;
+  height: 50vh;
+}
+.square {
+  height: 10vw;
+  width: 10vw;
+  border: 1px solid red;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  border-radius: 35px;
+  transition: transform 1s;
+}
+#app3 .square.active {
+  transform: translateX(15vw);
+  animation: color 1s infinite alternate linear;
+}
+@keyframes color {
+  0% {
+    background: #3f5efb;
+  }
+  33% {
+    background: #fc466b;
+  }
+
+  66% {
+    background: #ffe600;
+  }
+  100% {
+    background: #fdc32d;
+  }
+}

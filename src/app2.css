@@ -1,0 +1,39 @@
+#app2 {
+  border: royalblue solid 1px;
+  width: 50vw;
+  height: 50vh;
+  overflow: hidden;
+}
+#tab-bar {
+  border: 1px solid aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#tab-bar > li {
+  border-radius: 30px;
+  width: 300px;
+  border: black solid 5px;
+  height: 7vh;
+  font-size: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  display: none;
+}
+.light {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+.active {
+  display: block;
+}

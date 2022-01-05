@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+body > #page {
+  border: black solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body {
+  overflow: hidden;
+}
+button {
+  margin: 10px;
+  padding: 14px 18px;
+  font-size: 30px;
+  margin-left: 20px;
+  width: 100px;
+}
+#app1 {
+  border: 1px solid red;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 49vw;
+  height: 50vh;
+}
+#app2 {
+  border: royalblue solid 1px;
+  width: 50vw;
+  height: 50vh;
+  overflow: hidden;
+}
+#tab-bar {
+  border: 1px solid aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#tab-bar > li {
+  border-radius: 30px;
+  width: 300px;
+  border: black solid 5px;
+  height: 7vh;
+  font-size: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  display: none;
+}
+.light {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+.active {
+  display: block;
+}
+#app3 {
+  border: rosybrown solid 1px;
+  width: 49vw;
+  height: 50vh;
+}
+.square {
+  height: 10vw;
+  width: 10vw;
+  border: 1px solid red;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  border-radius: 35px;
+  transition: transform 1s;
+}
+#app3 .square.active {
+  transform: translateX(15vw);
+  animation: color 1s infinite alternate linear;
+}
+@keyframes color {
+  0% {
+    background: #3f5efb;
+  }
+  33% {
+    background: #fc466b;
+  }
+
+  66% {
+    background: #ffe600;
+  }
+  100% {
+    background: #fdc32d;
+  }
+}
+#app4 {
+  border: 1px solid green;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+#app4 .circle {
+  width: 30vh;
+  height: 30vh;
+  border: 2px solid teal;
+  border-radius: 50%;
+  margin-top: 10vh;
+}
+@keyframes color {
+  0% {
+    background: #3f5efb;
+  }
+  33% {
+    background: #fc466b;
+  }
+
+  66% {
+    background: #ffe600;
+  }
+  100% {
+    background: #fdc32d;
+  }
+}
+#app4 .circle.active {
+  animation: color 1s infinite alternate linear;
+}
